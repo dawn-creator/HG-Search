@@ -1,0 +1,1 @@
+['homo_GNN', 'relation', 'elu', 0.4, 1, 'sageconv', False, False, 32, 3, 2, 1, 'distmult', 0.001, 'attention', 400, 2, 'Adam', 'stack', 1, 1, 1, 1, 1, 1];0.5;0.7323438355517795;0.7704726222874886

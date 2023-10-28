@@ -1,0 +1,4 @@
+HGBn-ACM.bin filter=lfs diff=lfs merge=lfs -text
+HGBn-DBLP.bin filter=lfs diff=lfs merge=lfs -text
+HGBn-Freebase.bin filter=lfs diff=lfs merge=lfs -text
+HGBn-IMDB.bin filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,6 @@
+info.dat filter=lfs diff=lfs merge=lfs -text
+label.dat filter=lfs diff=lfs merge=lfs -text
+label.dat.test filter=lfs diff=lfs merge=lfs -text
+link.dat filter=lfs diff=lfs merge=lfs -text
+meta.dat filter=lfs diff=lfs merge=lfs -text
+node.dat filter=lfs diff=lfs merge=lfs -text

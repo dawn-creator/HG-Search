@@ -1,0 +1,4 @@
+['homo_GNN', 'relation', 'elu', 0.4, 1, 'sageconv', False, False, 32, 3, 2, 1, 'distmult', 0.001, 'attention', 400, 2, 'Adam', 'stack', 1, 1, 1, 1];0.19129863493122165;0.19129863493122165;0.20218369606537567
+['general_HGNN', 'relation', 'sigmoid', 0.4, 1, 'ginconv', False, True, 16, 3, 1, 1, 'distmult', 0.01, 'mean', 200, 4, 'Adam', 'stack', 1, 1, 1, 1];-0.0032033968359835574;0.1880952380952381;0.17654512177952977
+['homo_GNN', 'relation', 'tanh', 0.5, 2, 'gcnconv', True, False, 32, 4, 3, 1, 'dot-product', 0.001, 'max', 400, 8, 'Adam', 'stack', 1, 1, 1, 1];0.4565686633299462;0.6462655998431761;0.6442467073838304
+['general_HGNN', 'mixed', 'relu', 0.6, 1, 'gcnconv', True, False, 16, 5, 2, 1, 'dot-product', 0.001, 'sum', 400, 2, 'Adam', 'stack', 1, 1, 1, 1];0.290255310727642;0.6321418016841873;0.7131523766440463
