@@ -36,6 +36,3 @@ dropout,feat,hidden_dim,layers_gnn,layers_post_mp,layers_pre_mp,lr,max_epoch,num
 
 The HG-Search method requires a pre-search to be conducted first. Then, based on the optimal results obtained from the pre-search, the hyperparameters are fixed and the architecture search is performed. Next, based on the optimal results obtained from the architecture search, the architecture is fixed and the hyperparameter search is performed. To achieve excellent performance for different datasets, multiple iterations of architecture search and parameter search may be necessary.
 
-# HG-Search-Code
-# HG-Search-Code
-# HG-Search-Code
