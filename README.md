@@ -1,9 +1,8 @@
-The HG-Search method requires three stages: the first stage is pre search, the second stage is architecture search, and the third stage is hyperparameter search. 
+# The HG-Search method requires three stages: 
+pre search stage, architecture search stage, hyperparameter search stage. 
 
-In the pre search stage, it is necessary to preserve all network architecture space and hyperparameter space before conducting the search. The specific approach is as follows:
-1.Keep all options in the self.search_space structure in the 'Search/search_space.py' file
-2.
-To perform a pre search on  DBLP dataset, you should execute the 
+
+# To perform a pre search on  DBLP/IMDB/AMiner/Freebase dataset, you should keep all options in the self.search_space structure in the 'Search/search_space.py' file and execute the 
 
 ```python Search/main.py --dataset HGBn-DBLP --dataset_name HGBn-DBLP --predictfile HGBn-DBLP
    python Search/main.py --dataset HGBn-IMDB --dataset_name HGBn-IMDB --predictfile HGBn-IMDB
