@@ -2,8 +2,8 @@
 pre search stage, architecture search stage, hyperparameter search stage. 
 
 
-# To perform a pre search stage on  DBLP/IMDB/AMiner/Freebase dataset, 
-you should keep all options in the self.search_space structure in the 'Search/search_space.py' file and execute the 
+# To perform a pre search stage on  DBLP/IMDB/AMiner/Freebase dataset 
+You should keep all options in the self.search_space structure in the 'Search/search_space.py' file and execute the following command,
 
 ```
    python Search/main.py --dataset HGBn-DBLP --dataset_name HGBn-DBLP --predictfile HGBn-DBLP
@@ -11,29 +11,24 @@ you should keep all options in the self.search_space structure in the 'Search/se
    python Search/main.py --dataset HGBn-AMiner --dataset_name HGBn-AMiner --predictfile HGBn-AMiner
    python Search/main.py --dataset HGBn-Freebase --dataset_name HGBn-Freebase --predictfile HGBn-Freebase
 ```
+# To perform the architecture search stage on  DBLP/IMDB/AMiner/Freebase dataset 
+You should fix the hyperparameter related options in the "Search/search_space.py" file and preserve the schema search space, then execute the following command,
+```
+   python Search/main.py --dataset HGBn-DBLP --dataset_name HGBn-DBLP --predictfile HGBn-DBLP
+   python Search/main.py --dataset HGBn-IMDB --dataset_name HGBn-IMDB --predictfile HGBn-IMDB
+   python Search/main.py --dataset HGBn-AMiner --dataset_name HGBn-AMiner --predictfile HGBn-AMiner
+   python Search/main.py --dataset HGBn-Freebase --dataset_name HGBn-Freebase --predictfile HGBn-Freebase
+```
 
-To perform  pre search on  IMDB dataset, you should execute the "python Search/main.py --dataset HGBn-IMDB --dataset_name HGBn-IMDB --predictfile HGBn-IMDB" command. 
-To perform a pre search on  AMiner dataset, you should execute the "python Search/main.py --dataset HGBn-AMiner --dataset_name HGBn-AMiner --predictfile HGBn-AMiner" command.
-To perform  pre search on  Freebase dataset, you should execute the "python Search/main.py --dataset HGBn-Freebase --dataset_name HGBn-Freebase --predictfile HGBn-Freebase" command.
+# To perform the hyperparameter search stage on DBLP/IMDB/AMiner/Freebase dataset
 
-
-In the architecture search phase, it is necessary to fix hyperparameters and then search based on the network architecture space. The specific approach is as follows:
-
-1.Fix the hyperparameter related options in the "Search/search_space.py" file and preserve the schema search space.
-2.
-To perform a architecture search on  DBLP dataset, you should execute the "python Search/main.py --dataset HGBn-DBLP --dataset_name HGBn-DBLP --predictfile HGBn-DBLP" command. 
-To perform  architecture search on  IMDB dataset, you should execute the "python Search/main.py --dataset HGBn-IMDB --dataset_name HGBn-IMDB --predictfile HGBn-IMDB" command. 
-To perform a architecture search on  AMiner dataset, you should execute the "python Search/main.py --dataset HGBn-AMiner --dataset_name HGBn-AMiner --predictfile HGBn-AMiner" command.
-To perform  architecture search on  Freebase dataset, you should execute the "python Search/main.py --dataset HGBn-Freebase --dataset_name HGBn-Freebase --predictfile HGBn-Freebase" command.
-
-In the hyperparameter search stage, a fixed network architecture is required, and then the search is conducted based on the hyperparameter search space.The specific approach is as follows:
-
-1.Fix the architecture  related options in the "Search/search_space.py" file and preserve the hyperparameter search space.
-2.
-To perform a hyperparameter  search on  DBLP dataset, you should execute the "python Search/main.py --dataset HGBn-DBLP --dataset_name HGBn-DBLP --predictfile HGBn-DBLP" command. 
-To perform  hyperparameter  search on  IMDB dataset, you should execute the "python Search/main.py --dataset HGBn-IMDB --dataset_name HGBn-IMDB --predictfile HGBn-IMDB" command. 
-To perform a hyperparameter  search on  AMiner dataset, you should execute the "python Search/main.py --dataset HGBn-AMiner --dataset_name HGBn-AMiner --predictfile HGBn-AMiner" command.
-To perform  hyperparameter  search on  Freebase dataset, you should execute the "python Search/main.py --dataset HGBn-Freebase --dataset_name HGBn-Freebase --predictfile HGBn-Freebase" command.
+In the hyperparameter search stage, a fixed network architecture is required, and then the search is conducted based on the hyperparameter search space. You should fix the architecture related options in the "Search/search_space.py" file and preserve the hyperparameter search space.
+```
+   python Search/main.py --dataset HGBn-DBLP --dataset_name HGBn-DBLP --predictfile HGBn-DBLP
+   python Search/main.py --dataset HGBn-IMDB --dataset_name HGBn-IMDB --predictfile HGBn-IMDB
+   python Search/main.py --dataset HGBn-AMiner --dataset_name HGBn-AMiner --predictfile HGBn-AMiner
+   python Search/main.py --dataset HGBn-Freebase --dataset_name HGBn-Freebase --predictfile HGBn-Freebase
+```
 
 The options related to architecture in the "Search/search_space.py" file are as follows:
 model,subgraph_extraction,activation,gnn_type,has_bn,has_l2norm,macro_func,stage_type.
