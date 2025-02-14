@@ -5,7 +5,11 @@ In the pre search stage, it is necessary to preserve all network architecture sp
 2.
 To perform a pre search on  DBLP dataset, you should execute the 
 
-```python Search/main.py --dataset HGBn-DBLP --dataset_name HGBn-DBLP --predictfile HGBn-DBLP```
+```python Search/main.py --dataset HGBn-DBLP --dataset_name HGBn-DBLP --predictfile HGBn-DBLP
+   python Search/main.py --dataset HGBn-IMDB --dataset_name HGBn-IMDB --predictfile HGBn-IMDB
+   python Search/main.py --dataset HGBn-AMiner --dataset_name HGBn-AMiner --predictfile HGBn-AMiner
+   python Search/main.py --dataset HGBn-Freebase --dataset_name HGBn-Freebase --predictfile HGBn-Freebase
+```
 
 To perform  pre search on  IMDB dataset, you should execute the "python Search/main.py --dataset HGBn-IMDB --dataset_name HGBn-IMDB --predictfile HGBn-IMDB" command. 
 To perform a pre search on  AMiner dataset, you should execute the "python Search/main.py --dataset HGBn-AMiner --dataset_name HGBn-AMiner --predictfile HGBn-AMiner" command.
